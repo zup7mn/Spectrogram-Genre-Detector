@@ -28,4 +28,4 @@ def spectrogram_of_middle(song_path, sr=2**13, n_fft=2**11, hop_length=2**10):
     
     image = librosa.power_to_db(spectrogram.numpy())
 
-    return torch.from_numpy(image)
+    return image
