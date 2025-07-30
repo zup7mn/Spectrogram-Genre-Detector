@@ -1,5 +1,6 @@
 
-def spectrogram_of_middle(song_path, sr=2**13, n_fft=2**11, hop_length=2**10):
+def spectrogram_of_middle(song_path, sr=41100, n_fft=8192):
+
     """
     Compute the spectrogram of the middle 20 seconds of a song.
 
@@ -37,7 +38,7 @@ def spectrogram_of_middle(song_path, sr=2**13, n_fft=2**11, hop_length=2**10):
     print(segment.shape)
 
     # Compute the spectrogram
-    spectrogram = T.Spectrogram(n_fft=n_fft, hop_length=hop_length)(torch.tensor(segment).float())
+    spectrogram = T.Spectrogram(n_fft=n_fft)(torch.tensor(segment).float())
     
     image = librosa.power_to_db(spectrogram.numpy())
 
