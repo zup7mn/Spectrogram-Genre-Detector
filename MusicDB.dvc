@@ -1,0 +1,6 @@
+outs:
+- md5: dcccb117861a314f53abb3623c4b537c.dir
+  size: 4052508871
+  nfiles: 1329
+  hash: md5
+  path: MusicDB
