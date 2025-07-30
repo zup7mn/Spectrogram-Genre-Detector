@@ -15,3 +15,6 @@ for /l %%i in (1,1,10) do (
     zotify --download-quality normal https://open.spotify.com/playlist/37i9dQZF1DXdbXrPNafg9d
     zotify --download-quality normal https://open.spotify.com/playlist/37i9dQZF1DX9tPFwDMOaN1
 )
+
+
+# https://open.spotify.com/playlist/37i9dQZF1DX4dyzvuaRJ0n?si=6f394f1c0eef4133
